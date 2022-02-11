@@ -2,7 +2,12 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-#%matplotlib inlinessasssss
+import valohai
+valohai.prepare(step="train")
+valohai.prepare(step="train", image="tensorflow/tensorflow:2.6.1-gpu")
+
+
+#%matplotlib inline
 data_train = pd.read_csv('C:/Users/40077/Desktop/valo/valotest/venv/train.csv')
 data_test = pd.read_csv('C:/Users/40077/Desktop/valo/valotest/venv/test.csv')
 
